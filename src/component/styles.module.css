@@ -1,0 +1,173 @@
+.image {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1592150621744-aca64f48394a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=891&q=80");
+  background-size: contain;
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(8, 0, 14, 0.63);
+}
+
+.bgText {
+  position: relative;
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  font-family: interstate, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.box {
+  height: 100vh;
+  padding: 0;
+}
+
+.introduction {
+  position: relative;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-family: interstate, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.h1Text {
+  color: #32502e;
+  font-size: 3rem;
+  font-family: interstate, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  padding-left: 35%;
+  align-items: center;
+}
+
+.pText {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.5rem;
+  font-family: interstate, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  line-height: 1.15;
+}
+.gText {
+  align-items: center;
+  padding-left: 18%;
+}
+
+/* for searchData*/
+.container {
+  padding: 50px 30px;
+  width: 99%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card_item {
+  align-items: center;
+  margin: 20px;
+}
+
+.container .card_item img {
+  height: 250px;
+  width: 250px;
+  object-position: center;
+  transition: transform 0.2s;
+}
+
+.paper {
+  width: 70%;
+  padding: 15px 30px;
+  align-items: center;
+  object-position: center;
+}
+
+.dataName {
+  font-size: 1.5rem;
+  padding: 10px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+  font-family: interstate, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*for spinner*/
+
+.clipLoader {
+  padding-left: 20%;
+  padding-top: 3%;
+}
+.clipLoader h2 {
+  text-align: left;
+  padding-left: 17%;
+}
+
+@media only screen and (max-width: 550px) {
+  .bgText {
+    font-size: 2rem;
+  }
+  .introduction {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .button {
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .clipLoader {
+    padding-left: 25px;
+  }
+
+  .clipLoader h2 {
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 600;
+    padding-left: 18px;
+  }
+  .h1Text {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-left: 25px;
+  }
+  .pText {
+    font-size: 1.2rem;
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  .container {
+    padding: 20px 30px;
+  }
+  .button {
+    margin-left: 20%;
+  }
+  .gText {
+    padding-left: 15px;
+  }
+}
